@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.sky{
+	height: 100vh;
+	width: 100%;
+	background-image: url(if-you-look-closely-you-can-see-the-bat-signal-in-the-sky-v0-ot4hxlo6f2wa1.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+.trees{
+	height: 100vh;
+	width: 100%;
+	background-image: url(trees.png);
+	background-size: cover;
+	position: absolute;
+	top: -144px;
+}
+
+.track {
+	height: 60vh;
+	width: 800vw;
+	background-image: url(track.png);
+	background-repeat: repeat-x;
+	position: absolute;
+	top: 70vh;
+	animation: carMove linear 13s infinite;
+}
+
+.car{
+	height: 132px;
+	width: 380px;
+	background-image: url(imgbin_batman-batmobile-superhero-drawing-png.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 444px;
+	bottom: 20vh;
+	animation: shake linear 3s infinite;
+}
+
+@keyframes carMove
+{
+	100%{
+		transform: translateX(-50vw);
+	}
+}
+
+@keyframes shake
+{
+	0%{
+		transform: translateY(-5px);
+	}
+	50%{
+		transform: translateY(5px);
+	}
+	100%{
+		transform: translateY(-5px);
+	}
+}
+
+body{
+	overflow: hidden;
+	animation: shakebody linear 6s infinite;
+}
+
+@keyframes shakebody
+{
+	0%{
+		transform: translateY(-50px);
+	}
+	50%{
+		transform: translateY(50px);
+	}
+	100%{
+		transform: translateY(-50px);
+	}
+}
